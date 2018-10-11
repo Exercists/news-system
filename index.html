@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <div>
+          <h1>Todays News</h1>
+          <div id="news-container">
+
+            <div class="news">
+
+              <h2>Fire in the bacon house!</h2>
+
+              <p>
+                  Ribeye pastrami ham, corned beef biltong flank rump shankle picanha filet mignon turkey strip steak pig jerky. Strip steak andouille ground round landjaeger, tongue hamburger shoulder shankle short ribs kevin turkey fatback tail. Swine beef spare ribs tri-tip andouille kevin fatback rump picanha salami pancetta burgdoggen alcatra pork chop.
+              </p>
+
+              <p class="date">11.10.2018 09:23</p>            
+
+            </div>
+          
+          </div>
+      </div>
+
+      <div>
+
+          <h2>Write about a newsworthy incident</h1>
+
+          <form onsubmit="return saveNews(event)">
+              <p>
+                <input id="title" name="title" placeholder="Heading" type="text">
+              </p>
+              
+              <p>
+                <textarea id="content" name="news" placeholder="What's new?" cols="30" rows="10"></textarea>
+              </p>
+        
+              <p>
+                <button class="btn-submit" type="submit">Save News</button> 
+              </p>
+          
+            </form>
+      </div>
+    </div>
+  </body>
+</html>

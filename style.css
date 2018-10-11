@@ -1,0 +1,47 @@
+html { font-size: 62.5%; }      
+body { font-size: 1.6rem; } /* =16px */
+h1   { font-size: 2.4rem; text-align:center;} /* =24px */
+
+.container {
+  display: flex;
+}
+
+div#news-container {
+  width: 600px;
+  line-height: 1.5;
+  margin: 0 15px; 
+}
+
+.news {
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.news:nth-child(even) {
+  background-color:gainsboro;
+}
+
+.news p.date {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+input, textarea {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  font-size: 1.6rem;
+}
+
+.btn-submit {
+  background-color:sandybrown;
+  border: 1px solid sandybrown;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  
+}

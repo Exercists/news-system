@@ -26,6 +26,9 @@ The assignment is to finish the `saveNews()` and `refreshNews()` functions. Look
  ### Clear the input fields after the news is saved
  Improve the user experience (UX) by clearing the fields.
 
+ ### Order news descending
+ Display the freshest news first 
+
 
 # Hints
 ...

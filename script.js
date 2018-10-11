@@ -10,27 +10,40 @@ function saveNews(event) {
   // Make sure form is not submitted
   event.preventDefault();
   
-  // @TODO: Fetch the data from the form
- 
+  // Handle news
+  const title = document.getElementById('title').value
+  const content = document.getElementById('content').value
+  const date = new Date
 
-  // @TODO: Add news to array
- 
+  // Add news to array
+  news.push({
+    title,
+    content,
+    date: `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`
+  })
 
-  // @TODO: Refresh news
-
+  // Refresh news
+  refreshNews()
 
   // Return false to not submit
   return false;
 }
 
 function refreshNews() {
-  // @TODO: Find news container
+  // Find news container
+  const container = document.getElementById('news-container');
 
-  // @TODO: loop over the news and create HTML for each
+  // loop over the news and create HTML for each
   const html = news.map((news) => {
-    return `@TODO: create HTML`;
+    
+    return `<div class="news">
+              <h2>${news.title}</h2>
+              <p>${news.content}</p>
+              <p class="date">${news.date}</p>
+            </div>`;
   })
 
-  // @TODO: Inject the news HTML
-
+  // Inject new HTML by creating a string from the array
+  // "" is the glue between the array items
+  container.innerHTML = html.join("")
 }

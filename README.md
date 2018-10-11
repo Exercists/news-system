@@ -20,12 +20,11 @@ The assignment is to finish the `saveNews()` and `refreshNews()` functions. Look
 
 # Bonus tasks
 
- ## Add HTML form validation to prevent empty entries
+ ### Add HTML form validation to prevent empty entries
  Hint: Take a look at the [required attribute](https://www.w3schools.com/html/html_form_attributes.asp)
 
- ## Clear the input fields after the news is saved
+ ### Clear the input fields after the news is saved
  Improve the user experience (UX) by clearing the fields.
-
 
 
 # Hints
